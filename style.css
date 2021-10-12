@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+html {
+  font-family: "Noto Sans Display";
+  font-size: 12px;
+}
+
+.header{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 50%;
+}
+
+.video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: rgba(0, 0, 0, 0.534);
+}
+
+.container {
+  width: 100%;
+  height: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.maintitle {
+  text-align: center;
+  font-size: 4rem;
+  color: whitesmoke;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+input {
+  color: rgb(0, 0, 0);
+  width: 91%;
+  padding: 10px;
+  border: none;
+  outline: black;
+  font-size: 2rem;
+  background-color: transparent;
+  display: inline-block;
+}
+
+form ion-icon {
+  width: 8%;
+  font-size: 3rem;
+  margin-bottom: -10px;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+}
+
+.search-result {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(37, 37, 37);
+  padding: 15px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; 
+  border-radius: 4px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-result .item-title {
+  color: whitesmoke;
+  margin: 20px 10px 0 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.item-data {
+  color: whitesmoke;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+}
+
+.container.initial .maintitle {
+  font-size: 7rem;
+}
+
+.header.initial {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 100%;
+}
+
+.container.initial form {
+  max-width: 800px;
+}
+
+.container.initial form input {
+  padding: 20px;
+  font-size: 3rem;
+}
+
+
+@media (max-width: 768px) {
+  .header{
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .search-result {
+    grid-gap: 10px;
+  }
+
+  .container.initial form {
+    max-width: 500px;
+  }
+
+  .container.initial form input {
+    padding: 10px;
+    font-size: 2rem;
+  }
+}
